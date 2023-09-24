@@ -1,0 +1,8 @@
+import random
+znaki = ("+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
+pytanie = int(input("Ile znaków ma mieć twoje hasło? "))
+a = ''
+
+for i in range(pytanie):
+    a += random.choice(znaki)
+print(a)
